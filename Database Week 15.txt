@@ -1,0 +1,44 @@
+FRANCIS NGURE KAMAU Database Week 15
+CREATE database Cinema;
+
+2. Data FUN
+
+SELECT * FROM Netflix
+WHERE Country='Mexico';
+
+SELECT * FROM Netflix
+WHERE listed_in = 'Thrillers';
+
+SELECT * FROM Netflix
+WHERE description LIKE '%romance%';
+
+SELECT COUNT(*)
+FROM Netflix;
+
+SELECT COUNT(type)
+FROM Netflix
+WHERE director = 'Steven Spielberg';
+
+SELECT AVG(country)
+FROM Netflix
+WHERE type = 'Movie';
+
+3. Ask Away
+Which movies from the database has Spike Lee directed?
+
+How many TV shows are there compared to Movies in the database?
+
+SELECT * FROM Netflix
+WHERE director = 'Steven Spielberg';
+
+SELECT COUNT(type)
+FROM Netflix
+WHERE type = 'Movie';
+
+SELECT COUNT(type)
+FROM Netflix
+WHERE type = 'TV Show';
+
+Data can be easily calculated using SQL queries depending on what is required like number of movies released in a certain year.
+
+
